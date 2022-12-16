@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TTF Scaffolding | Current Inventory </title>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="lds-ripple"><div></div><div></div></div>
+        <h2> Loading </h2>
+    </div>
+
+    <div id='content' class="content">
+        <div class="theHeader">
+            <img src="/logo.png">
+            <h2> INVENTORY </h2>
+    	    <div class="contact">
+    	    	<h1>10979 Olsen Road </h1> 
+    	    	<h1>Surrey, BC </h1> 
+    	    	<h1>V3V 3S9 </h1>
+    	    	<h1>Tel:(778) 898-5301 </h1> 
+    	    	<h1>info@ttfscaffolding.com </h1>
+	        </div>
+        </div>
+    	<div class="customer-details" id="customer-details">
+	        <div class="row1">
+	        	<div> CUSTOMER NAME: </div>
+	        	<div id="underline"> <p id="customerName"></p> </div>		
+	        	<div id="date"> DATE: </div>
+	        	<div id="underline"> <p id="currentDate"></p> </div>
+            </div>    
+	        <div class="row2">
+	        	<div> JOBSITE: </div>
+	        	<div id="underline"> <p id="jobsite"></p> </div>		
+	        	<div id="date"> ADDED VIA: </div>
+	        	<div id="underline"> <?php echo "" ?> </div>
+	        </div>
+    	</div>
+    	<div class="table2">
+		    <table>
+		        <tr>
+		            <th style='width:230px'"> DESCRIPTION </th>
+		            <th > ADD </th>
+		            <th > RET </th>
+		            <th  style='width:250px'"> DESCRIPTION </th>
+		            <th > ADD </th>
+		            <th > RET </th>
+		        </tr>
+		        <tr>
+		        	<td>  6’H x 4’W Alum H.D. Frames </td>
+                    <td> <p id="af6x4"></p></td>
+		        	<td> </td>
+		        	<td> 20’ 0” Alum.Beams (PURPLE) </td>
+		        	<td> <p id="ab20"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        	<td> 5’H x 4’W Alum H.D. Frames </td>
+		        	<td> <p id="af5x4"></p></td>
+		        	<td> </td>
+		        	<td> 18’ 0” Alum.Beams (RED) </td>
+		        	<td> <p id="ab18"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        	<td> 4’H x 4’W Alum H.D. Frames </td>
+		        	<td> <p id="af4x4"></p></td>
+		        	<td> </td>
+		        	<td> 16’ 0” Alum.Beams (YELLOW) </td>
+		        	<td> <p id="ab16"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> 14’ 0” Alum.Beams (SILVER) </td>
+		        	<td> <p id="ab14"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        	<td> 6’H x 4’W Steel H.D. Frames </td>
+		        	<td> <p id="sf6x4"></p></td>
+		        	<td> </td>
+		        	<td> 13’ 0” Alum.Beams (PINK) </td>
+		        	<td> <p id="ab13"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        	<td> 5’H x 4’W Steel H.D. Frames </td>
+		        	<td> <p id="sf5x4"></p></td>
+		        	<td> </td>
+		        	<td> 12’ 0” Alum.Beams (BROWN) </td>
+		        	<td> <p id="ab12"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        	<td> 4’H x 4’W Steel H.D. Frames </td>
+		        	<td> <p id="sf4x4"></p></td>
+		        	<td> </td>
+		        	<td> 10.6’ 0” Alum.Beams (BLUE) </td>
+		        	<td> <p id="ab106"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        	<td> 3’H x 4’W Steel H.D. Frames </td>
+		        	<td> <p id="sf3x4"></p></td>
+		        	<td> </td>
+		        	<td> 10.0’ 0” Alum.Beams (BLACK) </td>
+		        	<td> <p id="ab10"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> 9’ 0” Alum.Beams (ORANGE) </td>
+		        	<td> <p id="ab9"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> 10 x 4 C.Bars (PURPLE) </td>
+		        	<td> <p id="cb10x4"></p></td>
+		        	<td> </td>
+		        	<td> 8’ 0” Alum.Beams (RED) </td>
+		        	<td> <p id="ab8"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> 10 x 2 C.Bars (PINK) </td>
+		        	<td> <p id="cb10x2"></p></td>
+		        	<td> </td>
+		        	<td> 7’ 0” Alum.Beams (YELLOW) </td>
+		        	<td> <p id="ab7"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> 7 x 4 C.Bars (YELLOW) </td>
+		        	<td> <p id="cb7x4"></p></td>
+		        	<td> </td>
+		        	<td> 6’ 0” Alum.Beams (GREEN) </td>
+		        	<td> <p id="ab6"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> 7 x 2 C.Bars (RED) </td>
+		        	<td> <p id="cb7x2"></p></td>
+		        	<td> </td>
+		        	<td> 5’ 0” Alum.Beams (WHITE) </td>
+		        	<td> <p id="ab5"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> 5 x 4 C.Bars (GREEN) </td>
+		        	<td> <p id="cb5x4"></p></td>
+		        	<td> </td>
+		        	<td> 4’ 0” Alum.Beams (LIME) </td>
+		        	<td> <p id="ab4"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> 5 x 2 C.Bars (ORANGE) </td>
+		        	<td> <p id="cb5x2"></p></td>
+		        	<td> </td>
+		        	<td>  </td>
+		        	<td id="quantity"> <?php  ?> </td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> 4 x 4 C.Bars (BLUE) </td>
+		        	<td> <p id="cb4x4"></p></td>
+		        	<td> </td>
+		        	<td> NO.1 Shores </td>
+		        	<td> <p id="sh1"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> 4 x 2 C.Bars (WHITE) </td>
+		        	<td> <p id="cb4x2"></p></td>
+		        	<td> </td>
+		        	<td> NO.2 Shores </td>
+		        	<td> <p id="sh2"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> NO.3 Shores </td>
+		        	<td> <p id="sh3"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> Alum H.D S.J U/Heads </td>
+		        	<td> <p id="auh"></p></td>
+		        	<td> </td>
+		        	<td> NO.4 Shores </td>
+		        	<td> <p id="sh4"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		        <td> Alum H.D S.J B/Plates </td>
+                    <td> <p id="abp"></p></td>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+		            <td> </td>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> 12'0" 4x6 Wood Beams </td>
+		        	<td> <p id="wb12"></p></td>
+		        	<td> </td>
+		        </tr>
+                <tr>
+                    <td> Steel H.D S.J U/Heads </td>
+		        	<td> <p id="suh"></p></td>
+		        	<td> </td>
+		        	<td> 11'0" 4x6 Wood Beams </td>
+		        	<td> <p id="wb11"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+                    <td> Steel H.D S.J B/Plates </td>
+		        	<td> <p id="sbp"></p></td>
+		        	<td> </td>
+		        	<td> 10'0" 4x6 Wood Beams </td>
+		        	<td> <p id="wb10"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+                    <td> </td>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> 9'0" 4x6 Wood Beams </td>
+		        	<td> <p id="wb9"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+                    <td> Alum H.D. Frame Coup Pins </td>
+		        	<td> <p id="afc"></p></td>
+		        	<td> </td>
+		        	<td> 8'0" 4x6 Wood Beams </td>
+		        	<td> <p id="wb8"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+                    <td> Steel H.D. Frame Coup Pins </td>
+                    <td> <p id="sfc"></p></td>
+		        	<td> </td>
+		        	<td> 7'0" 4x6 Wood Beams </td>
+		        	<td> <p id="wb7"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+                    <td> </td>
+		        	<td> </td>
+		        	<td> </td>
+		        	<td> 6'0" 4x6 Wood Beams </td>
+		        	<td> <p id="wb6"></p></td>
+		        	<td> </td>
+		        </tr
+		        <tr>
+                    <td> Beam Clips-Reg </td>
+		        	<td> <p id="bc"></p></td>
+		        	<td> </td>
+		        	<td> 5'0" 4x6 Wood Beams </td>
+		        	<td> <p id="wb5"></p></td>
+		        	<td> </td>
+		        </tr
+		    </table>	
+    	</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
