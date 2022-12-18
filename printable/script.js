@@ -134,21 +134,12 @@ function showResults(){
                 wb7.innerHTML = data[i][47]; 
                 wb6.innerHTML = data[i][43]; 
                 wb5.innerHTML = data[i][48];      
-                
-                document.getElementById('loader').style.display = "none";
             }
         }
+        window.print();
     })
 }
-
 
 showResults();
 
 
-
-
-function printSheet(){
-    let iframe = document.getElementById('printable');
-    iframe.setAttribute('src', 'printable/index.html?code='+currentCode);
-    // console.log('Printing ...');
-}

@@ -10,19 +10,8 @@ body{
 }
 
 .content {
-    min-width: 700px;
-    max-width: 700px;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 150px;
-    margin: 40px auto 100px auto;
-    
 }
-@media screen and (min-width:800px) {
-    .content {
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
-}
+
 
 .header{
     background-color: white;
@@ -399,18 +388,13 @@ td p {
 }
 
 
-.wrapper-loader {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
-    background-color: white;
-}
+
 .loader {
-    display: block;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
 .loader h2 {
@@ -418,12 +402,18 @@ td p {
     font-size: 20px;
     font-weight: 400;
     color: lightgray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
 }
 
 
 .lds-ripple {
-    display: block;
-    margin-bottom: 120px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-45%);
   }
   .lds-ripple div {
     position: absolute;
@@ -485,5 +475,5 @@ td p {
   }
 
   iframe {
-    display: none;
+    /* display: none; */
   }
